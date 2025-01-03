@@ -1,6 +1,8 @@
-# NakedTide
+# HeresyTide
 
-Take off your upper/lower gear (Shirtless, Pantless). Client-Side.
+Take off your upper/lower gear (Shirtless, Pantless), or become a heretic!
+
+---- Client-Side ONLY ----
 
 ## Installation
 
