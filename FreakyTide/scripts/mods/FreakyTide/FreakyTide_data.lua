@@ -1,12 +1,12 @@
 --[[
-    Nakedtide Mod Data
+    FreakyTide Mod Data
     Defines the mod's metadata and user-configurable options.
 ]]
 
-local mod = get_mod("Nakedtide")
+local mod = get_mod("FreakyTide")
 
 return {
-    name = "Nakedtide",
+    name = "FreakyTide",
     description = mod:localize("mod_description"),
     is_togglable = true,
     options = {
@@ -15,13 +15,13 @@ return {
                 setting_id = "upper_body_naked",
                 type = "checkbox",
                 default_value = true,
-                tooltip = "mod_upper_body_naked_tooltip"
+                tooltip = "upper_body_naked_tooltip"
             },
             {
                 setting_id = "lower_body_naked",
                 type = "checkbox",
                 default_value = false,
-                tooltip = "mod_lower_body_naked_tooltip"
+                tooltip = "lower_body_naked_tooltip"
             },
             {
                 setting_id = "upper_body_selection",
@@ -42,7 +42,7 @@ return {
                     { text = "upper_body_traitor_guard_elite_b",   value = "traitor_guard_elite_b" },
                     { text = "upper_body_traitor_guard_sniper",    value = "traitor_guard_sniper" }
                 },
-                tooltip = "mod_upper_body_selection_tooltip"
+                tooltip = "upper_body_selection_tooltip"
             },
             {
                 setting_id = "lower_body_selection",
@@ -61,7 +61,7 @@ return {
                     { text = "lower_body_traitor_guard_elite",     value = "traitor_guard_elite" },
                     { text = "lower_body_traitor_guard_sniper",    value = "traitor_guard_sniper" }
                 },
-                tooltip = "mod_lower_body_selection_tooltip"
+                tooltip = "lower_body_selection_tooltip"
             }
         }
     }

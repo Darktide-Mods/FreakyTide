@@ -1,9 +1,9 @@
 --[[
-    Nakedtide Mod
+    FreakyTide Mod
     This mod allows players to remove upper and lower body gear in Darktide.
 ]]
 
-local mod = get_mod("Nakedtide")
+local mod = get_mod("FreakyTide")
 local MasterItems = require("scripts/backend/master_items")
 
 -- Constants for override slots and items

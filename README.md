@@ -1,4 +1,4 @@
-# HeresyTide
+# FreakyTide
 
 Take off your upper/lower gear (Shirtless, Pantless), or become a heretic!
 

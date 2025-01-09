@@ -1,17 +1,17 @@
 --[[
-    Nakedtide Localization
+    FreakyTide Localization
     Provides localized strings for the mod in multiple languages.
 ]]
 
 return {
     mod_name = {
-        en = "Nakedtide",
-        de = "Nacktide"
+        en = "FreakyTide",
+        de = "FreakyTide"
     },
     mod_description = {
         en = "Takes your gear off.",
         de = "Entfernt deine Ausrüstung."
-    }
+    },
     upper_body_naked = {
         en = "Naked Upper Body",
         de = "Nackter Oberkörper"
@@ -20,29 +20,29 @@ return {
         en = "Naked Lower Body",
         de = "Nackter Unterkörper"
     },
-    mod_upper_body_naked_tooltip = {
+    upper_body_naked_tooltip = {
         en = "Remove upper body gear",
         de = "Oberkörper-Ausrüstung entfernen"
     },
-    mod_lower_body_naked_tooltip = {
+    lower_body_naked_tooltip = {
         en = "Remove lower body gear",
         de = "Unterkörper-Ausrüstung entfernen"
     },
     upper_body_selection = {
-        en = "Select upper body appearance",
-        de = "Wähle das Aussehen des Oberkörpers"
+        en = "Upper body appearance",
+        de = "Aussehen des Oberkörpers"
     },
-    mod_lower_body_selection_tooltip = {
-        en = "Select lower body appearance",
-        de = "Wähle das Aussehen des Unterkörpers"
+    upper_body_selection_tooltip = {
+        en = "Models have not been modified to fit 'Human' body",
+        de = "Modelle wurden nicht an den 'menschlichen' Körper angepasst"
     },
-    mod_upper_body_selection_tooltip = {
-        en = "Select upper body appearance",
-        de = "Wähle das Aussehen des Oberkörpers"
+    lower_body_selection = {
+        en = "Lower body appearance",
+        de = "Aussehen des Unterkörpers"
     },
-    mod_lower_body_selection_tooltip = {
-        en = "Select lower body appearance",
-        de = "Wähle das Aussehen des Unterkörpers"
+    lower_body_selection_tooltip = {
+        en = "Models have not been modified to fit 'Human' body",
+        de = "Modelle wurden nicht an den 'menschlichen' Körper angepasst"
     },
     upper_body_operator = {
         en = "Operator (Default)",
