@@ -78,3 +78,27 @@ mod:hook(CLASS.UIProfileSpawner, "_change_slot_item", function(func, self, slot_
     end
     func(self, slot_id, item)
 end)
+
+-- Function to print table contents
+function printTable(t)
+    if type(t) ~= "table" then
+        print(tostring(t))
+        return
+    end
+    local result = "{"
+    for k, v in pairs(t) do
+        if type(k) == "string" then
+            result = result .. k .. " = "
+        end
+        if type(v) == "table" then
+            result = result .. printTable(v)
+        else
+            result = result .. tostring(v)
+        end
+        result = result .. ", "
+    end
+    if result ~= "{" then
+        result = result:sub(1, -3) -- Remove last comma and space
+    end
+    return result .. "}"
+end
