@@ -67,16 +67,18 @@ mod:hook(CLASS.PlayerUnitVisualLoadoutExtension, "_equip_item_to_slot", function
 end)
 
 -- Hook function to modify equipment in UI profile spawner
-mod:hook(CLASS.UIProfileSpawner, "_change_slot_item", function(func, self, slot_id, item)
+mod:hook(CLASS.UIProfileSpawner, "_change_slot_item", function(func, self, slot_id, item, loadout, visual_loadout)
     local spawn_data = self._loading_profile_data or self._character_spawn_data
-    if spawn_data.profile.character_id == Managers.player:local_player(1)._profile.character_id then
+    if spawn_data and spawn_data.profile
+        and spawn_data.profile.character_id == Managers.player:local_player(1)._profile.character_id then
         if slot_id == OVERRIDE_SLOT_UPPER and mod:get("upper_body_naked") then
             item = get_upper_body_item()
         elseif slot_id == OVERRIDE_SLOT_LOWER and mod:get("lower_body_naked") then
             item = get_lower_body_item()
         end
     end
-    func(self, slot_id, item)
+
+    func(self, slot_id, item, loadout, visual_loadout)
 end)
 
 -- Function to print table contents
